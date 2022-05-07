@@ -8,7 +8,7 @@ public class Main {
 		DirPrinter dp = new DirPrinter();
 		FileTree ft = new FileTree(dp);
 		
-		File file = new File("C:\\Users\\fathi\\OneDrive\\Desktop\\PK1");
+		File file = new File("C:\\Users\\fathi\\OneDrive\\Desktop\\Informaik Studium");
 		ft.traverse(file);
 	}
 

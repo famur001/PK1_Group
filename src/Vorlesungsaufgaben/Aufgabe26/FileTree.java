@@ -1,6 +1,7 @@
 package Vorlesungsaufgaben.Aufgabe26;
 
 import java.io.File;
+import java.io.FileFilter;
 
 public class FileTree {
 
@@ -15,8 +16,8 @@ public class FileTree {
 		if(dir.isDirectory()) {
 			
 			dv.enter(dir);
-			
-			File[] listFiles = dir.listFiles();
+			FileFilter ft = new PdfFilter();
+			File[] listFiles = dir.listFiles(ft);
 			for( File f: listFiles ) {
 				if(f.isFile()) {
 					dv.visitFile(f);
