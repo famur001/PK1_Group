@@ -1,4 +1,4 @@
-package Praktikum_08;
+package Praktikum_07_Und_08;
 
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
